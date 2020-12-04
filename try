@@ -1,0 +1,5 @@
+Lambda = function(X,k){
+  x_new=X[(1:k),]
+  product=x_new %*% t(x_new)
+  return(sum(colSums(product)))
+}
